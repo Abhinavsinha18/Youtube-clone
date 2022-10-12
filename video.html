@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing</title>
+    <link rel="icon" href="https://www.youtube.com/s/desktop/4a88d8c6/img/favicon_144x144.png" sizes="144x144">
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+
+    <div id="uper-Nav">
+        <div class="sideNav">
+            <img src="Images/09.png" alt="">
+           
+        </div>
+        
+        
+        
+        <div class="ytLogo">
+           <a href="index.html"> <img src="Images/navbarYoutubeIcon.png" alt=""></a>
+        </div>
+        
+        <div id="searchBox">
+        <input type="text" placeholder="Search" id="search">
+        <button  onclick="showData()">
+            <img src="Images/01.png" alt="">
+        </button>
+        
+        <div >
+            <img src="Images/11.png" alt="">
+        </div>
+        </div>
+        
+        
+        <div id="rightNav">
+            <div>
+          <img src="Images/06.png"  class="logoImg" alt="">
+            </div>
+        <div>
+           <img src="Images/10.png"  class="logoImgtwo" alt="">
+        </div>
+        
+           <div>
+        
+            <img src="Images/PicsArt_11-09-12.02.24.png"  class="logoImgOne" alt="">
+           </div>
+        </div>
+        
+        
+        
+        </div>
+    
+        <div id="PlayVideoContainer">
+            <iframe id="myPlayVideo" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+
+
+</body>
+</html>
+
+<script>
+
+let playVideo = localStorage.getItem("video");
+    displayMyVideo(playVideo);
+    function displayMyVideo(videoNameId){
+        document.getElementById("myPlayVideo").setAttribute("src", `https://www.youtube.com/embed/${videoNameId}`)
+    }
+</script>
