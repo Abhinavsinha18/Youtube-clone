@@ -11,6 +11,7 @@
 
 
 
-##searh functionality is also working
+## Searh functionality is also working
+
 
 ![search yt](https://user-images.githubusercontent.com/94513021/213806235-aa36598c-1956-41d3-a593-98d2102f2c50.png)
